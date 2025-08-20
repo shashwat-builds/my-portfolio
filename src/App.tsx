@@ -1,9 +1,8 @@
-import Orb from "./Components/Background";
-import "./index.css";
+import Dashboard from "./Screen/Dashboard";
 
 function App(){
   return (
-   <Orb />
+    <Dashboard />
   );
 }
 

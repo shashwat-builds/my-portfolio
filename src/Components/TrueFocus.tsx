@@ -19,11 +19,11 @@ interface FocusRect {
 }
 
 const TrueFocus: React.FC<TrueFocusProps> = ({
-    sentence = "True Focus",
+    sentence = "Shashwat Kumar",
     manualMode = false,
     blurAmount = 5,
-    borderColor = "green",
-    glowColor = "rgba(0, 255, 0, 0.6)",
+    borderColor = "rgba(82, 39, 255,1)",
+    glowColor = "rgba(82, 39, 255,1)",
     animationDuration = 0.5,
     pauseBetweenAnimations = 1,
 }) => {
@@ -83,7 +83,7 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
                     <span
                         key={index}
                         ref={(el) => { wordRefs.current[index] = el; }}
-                        className="relative text-[3rem] font-black cursor-pointer"
+                        className="relative text-[3rem] font-black cursor-pointer text-white"
                         style={{
                             filter: manualMode
                                 ? isActive
