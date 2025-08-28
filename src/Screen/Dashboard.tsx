@@ -9,7 +9,6 @@ const Dashboard = () => {
         {/* Main Heading */}
         <Orb />
         <TrueFocus />
-
         {/* Sub Heading */}
         <h2 className="text-xl md:text-2xl font-bold text-gray-300 flex items-center gap-2">
           <span>Aspiring</span>
