@@ -275,7 +275,7 @@ export default function Orb({
             container.removeChild(gl.canvas);
             gl.getExtension("WEBGL_lose_context")?.loseContext();
         };
-    }, [hue, hoverIntensity, rotateOnHover, forceHoverState]);
+    }, [hue,frag,vert, hoverIntensity, rotateOnHover, forceHoverState]);
 
     return <div ref={ctnDom} className="fixed inset-0 w-full h-full -z-10" />;
 }
