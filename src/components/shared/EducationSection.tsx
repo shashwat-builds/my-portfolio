@@ -114,18 +114,18 @@ export default function EducationSection() {
             </div>
 
             {/* GRID: two rows (Education row, then Internship/Experience row) */}
-            <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-2 gap-x-30">
+            <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-2 gap-x-60">
                 {/* ===== ROW 1 ===== */}
                 {/* Left: Education heading (sticks only while right cards are present) */}
                 <div className="pr-6">
                     <div className="sticky top-[35vh] mb-16">
-                        <h2 className="text-5xl font-bold text-white">Education</h2>
+                        <h2 className="text-6xl font-bold text-white">Education</h2>
                     </div>
                 </div>
 
                 {/* Right: Education cards */}
-                <div className="space-y-12 md:space-y-20">
-                    <div className="h-[60vh]"></div>
+                <div className="space-y-12 md:space-y-70">
+                    <div className="h-[30vh]"></div>
                     {educationItems.map((item, i) => (
                         <div
                             key={`edu-${i}`}
@@ -199,7 +199,7 @@ export default function EducationSection() {
                 <div className="pl-6">
                     <div className="h-[55vh]"></div>
                     <div className="sticky top-[35vh] mb-16 text-right">
-                        <h2 className="text-5xl font-bold text-white">Experience</h2>
+                        <h2 className="text-6xl font-bold text-white">Experience</h2>
                     </div>
                 </div>
             </div>

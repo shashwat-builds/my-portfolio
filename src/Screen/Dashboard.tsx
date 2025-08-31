@@ -3,6 +3,7 @@ import Orb from "@/components/shared/Background"
 import RotatingText from "@/components/shared/RotatingText"
 import TrueFocus from "@/components/shared/TrueFocus"
 import EducationSection from "@/components/shared/EducationSection"
+import EducationSectionMobile from "@/components/shared/EducationSectionMobile"
 
 const Dashboard = () => {
   return (
@@ -32,8 +33,15 @@ const Dashboard = () => {
         </Card>
       </section>
 
-      {/* Education Section */}
-      <EducationSection />
+      {/* Education Section for PC */}
+      <div className="hidden md:block">
+        <EducationSection />
+      </div>
+
+      {/* Education Section for Mobile */}
+      <div className="block md:hidden">
+        <EducationSectionMobile />
+      </div>
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center">
         <Card className="relative z-10 p-6 md:p-10 bg-transparent border-0 shadow-none flex flex-col items-center gap-6">
